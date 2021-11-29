@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 pelican.pid
+srv.pid
+
 
 # C extensions
 *.so
@@ -36,3 +38,5 @@ package-lock.json
 docs/__pycache__
 docs/output
 docs/plugins
+
+.idea/workspace.xml
