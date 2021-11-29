@@ -1,22 +1,5 @@
-# Web Python Granada 
+# Web PyconES 2022
 
-![deploy workflow](https://github.com/josemlp91/python_granada_web/actions/workflows/deploy.yml/badge.svg) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0)
-
-
-## ¿Qué es esto?
-
-Este es el repositorio con el código fuente de la humilde web de la organización **« Python Granada »** 
-
-El objetivo es que sea un punto de encuentro y un lugar donde compartir las últimas novedades, eventos de interés que se organizan y todos la cosas de la comunidad Python que te puedan interesar para que no te pierdas nada.
-
-Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear tu post, publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. 
-
-
-## ¿Cómo puedo ayudar? 
-
-Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante fácil hacerlo.
-
-Hemos estructurado el proyecto para separar dos roles diferentes.
 
 ### Creador de contenidos o editor
 
@@ -72,10 +55,3 @@ make up
 ```
 
 Accede con tu navegador a la url [localhost:8000](http://localhost:8080)
-
-
-## Tengo algo bueno, vamos a publicar.
-
-Aquí nos gusta mucho el software libre, por tanto todas las contribuciones se gestionan vía [Github](https://github.com/) y usando **Pull Request** una vez se accepte el PR se publica automáticamente mediante nuestro **GitHub Action** personalizado, [GitHub Pages Pelican Build Action
-](https://github.com/PythonGranada/gh-pages-pelican-action) (by fork [nelsonjchen](https://github.com/nelsonjchen/pelican-action-demo))
-
