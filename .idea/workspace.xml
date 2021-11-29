@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bfe6c20-753b-46da-aec1-c5ec9ad556bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/theme/templates/_includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/_includes/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelicanconf_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf_common.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Python España Org'
-SITENAME = 'PyConES 2020 GRX'
+SITENAME = 'PyConES 2022 GRX'
 PATH = 'content'
 THEME = "theme"
 TIMEZONE = 'Europe/Madrid'
