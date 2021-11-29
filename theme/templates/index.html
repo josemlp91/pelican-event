@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+	{% include "_includes/index/navbar.html" %}
+{% endblock navbar %}
+
+{% block content %}
+	{% include "_includes/index/cover.html" %}
+
+	{% if ENABLE_TICKETS %}
+		{% include "_includes/index/buy_your_tickets.html" %}
+	{% endif %}
+
+	{% if ENABLE_KEYNOTERS %}
+		{% include "_includes/index/keynoters.html" %}
+	{% endif %}
+
+	{% if ENABLE_CALL_FOR_PAPERS %}
+		{% include "_includes/index/call_for_papers.html" %}
+	{% endif %}
+
+	{% include "_includes/index/timeline.html" %}
+	{% include "_includes/index/location.html" %}
+
+	{% if ENABLE_CALL_FOR_SPONSORS%}
+		{% include "_includes/index/call_for_sponsors.html" %}
+	{% endif %}
+
+	{% if ENABLE_SPONSORSHIPS %}
+		{% include "_includes/index/sponsorship.html" %}
+	{% endif %}
+{% endblock content %}

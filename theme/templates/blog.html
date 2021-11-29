@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h4 class="title is-4">Publicaciones</h4>
+    {% for article in (articles_page.object_list if articles_page else articles) %}
+    {% include "_includes/blog/article_extract.html" %}
+    {% endfor %}
+</div>
+{% endblock content %}
