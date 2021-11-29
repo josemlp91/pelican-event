@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6bfe6c20-753b-46da-aec1-c5ec9ad556bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,16 +28,22 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/footer.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pelicanconf.local.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/pelicanconf.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/timeline.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/static/scss/style.scss" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/theme/templates/index.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/buy_your_tickets.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/sponsorship.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pelicanconf_common.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/navbar.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pelicanconf.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.github/workflows/deploy.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/theme/templates/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/theme/templates/base.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/keynoters.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/cover.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/call_for_papers.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/theme/templates/_includes/index/location.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/theme/templates/_includes/navbar.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21NVh1yXC5HRMobAmfxstTfC7bA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

@@ -1,19 +1,11 @@
 @charset "utf-8";
 
-$dark-sea: rgba(2, 0, 36, 1);
-$sea: rgb(121, 9, 58);
-$light-sea: rgb(0, 170, 158);
-$turquoise: hsl(159.3, 45.4%, 48.8%);
-$light-green: hsl(105, 56.1%, 67.8%);
-$soft-yellow: #53a8a3;
-$white-ter: hsl(0, 0%, 96%);
-
-$primary: $sea;
-$info: $light-sea;
-$link: $light-sea;
-$success: $turquoise;
-$warning: $light-sea;
-$danger: rgb(121, 9, 58);
+$primary: #2F7494;
+$info: #3DADE0;
+$link: #3DADE0;
+$success: #3DADE0;
+$warning: #E03D52;
+$danger: #E03D52;
 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Montserrat&display=swap');
 
