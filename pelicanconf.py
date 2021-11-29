@@ -13,4 +13,4 @@ from pelicanconf_flags import *
 from pelicanconf_links import *
 
 
-SITEURL = 'TODO'
+SITEURL = 'https://josemlp91.github.io/pelican-event/'
