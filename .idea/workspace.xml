@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6bfe6c20-753b-46da-aec1-c5ec9ad556bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pelicanconf_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelicanconf_common.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf_common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pelicanconf_flags.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf_flags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srv.pid" beforeDir="false" afterPath="$PROJECT_DIR$/srv.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/theme/static/libs/fullcalendar/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/templates/schedule.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/schedule.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/theme/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,7 @@
       <workItem from="1638014112814" duration="390000" />
       <workItem from="1638172805266" duration="290000" />
       <workItem from="1638193480451" duration="900000" />
-      <workItem from="1638211606894" duration="3524000" />
+      <workItem from="1638211606894" duration="4674000" />
     </task>
     <servers />
   </component>

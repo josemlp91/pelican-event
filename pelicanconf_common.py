@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+import sys
+import os
+
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+from pelicanconf_flags import *
+
 AUTHOR = 'Python España Org'
 SITENAME = 'PyConES 2022 GRX'
 PATH = 'content'
@@ -35,15 +43,23 @@ JINJA_ENVIRONMENT = {
 DEFAULT_PAGINATION = False
 
 # Theme config
-MENUITEMS_NAVBAR = (
+MENUITEMS_NAVBAR = [
     ("La ciudad", "/pages/granada.html"),
     ("Código de conducta", "/pages/code-of-conduct.html"),
-    ("Ponentes", "/keynoters.html"),
-    ("Organizadores", "/pages/organizers.html"),
-    ("Patrocinadores", "/sponsorship.html"),
-    ("Horario", "/schedule.html"),
-    ("Blog", "/blog.html"),
-)
+    ("Organizadores", "/pages/organizers.html")
+]
+
+if ENABLED_SPEAKERS:
+    MENUITEMS_NAVBAR.append(tuple(("Ponentes", "/keynoters.html")))
+
+if ENABLED_SPONSORSHIPS:
+    MENUITEMS_NAVBAR.append(tuple(("Patrocinadores", "/sponsorship.html")))
+
+if ENABLED_SCHEDULE:
+    MENUITEMS_NAVBAR.append(tuple(("Horario", "/schedule.html")))
+
+if ENABLED_BLOG:
+    MENUITEMS_NAVBAR.append(tuple(("Blog", "/blog.html")))
 
 NAVBAR_STYLE = "is-primary"
 THEME_LOGO = "/theme/images/logo_grande.svg"
