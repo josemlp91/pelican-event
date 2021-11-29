@@ -44,7 +44,9 @@
         <div class="navbar-item">
             <div class="buttons">
                 {% for item, link, style in MENUITEMS_NAVBAR_FEATURED %}
-                    <a class="button {{ style }}" href="{{ link }}">{{ item }}</a>
+                    <a class="button {{ style }}" href="{{ SITEURL }}{{ link }}">
+                        {{ item }}
+                    </a>
                 {% endfor %}
             </div>
         </div>
