@@ -5,7 +5,7 @@ on:
   # but only for the master branch
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -15,4 +15,3 @@ jobs:
     - uses: pythongranada/gh-pages-pelican-action@0.2.6
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        PELICAN_THEME_FOLDER: themes/buruma
