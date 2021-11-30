@@ -27,12 +27,14 @@ MARKUP = ("md", "ipynb")
 IGNORE_FILES = [".ipynb_checkpoints"]
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["i18n_subsites", "assets",]
+PLUGINS = ["i18n_subsites", "assets", "events"]
 
 IPYNB_FIX_CSS = True
 IPYNB_SKIP_CSS = False
 IPYNB_STOP_SUMMARY_TAGS = [('div', ('class', 'input')), ('div', ('class', 'output')), ('h2', ('id', 'Header-2'))]
 IPYNB_GENERATE_SUMMARY = True
+
+EVENTS_ICS_FNAME =  'calendar.ics'
 
 
 DIRECT_TEMPLATES = ['index', 'blog', 'keynoters', 'sponsorship', 'schedule']
