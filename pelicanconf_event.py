@@ -21,9 +21,41 @@ EVENT_TRACKS = json.dumps([
 ])
 
 EVENT_START_DATE = "2020-09-07"
-EVENT_TALKS = json.dumps([
-    { "id": '1', "resourceId": 'a', "start": '2020-09-07T09:00:00', "end": '2020-09-07T14:00:00', "title": 'event 2', "editable":False, "description": "Ejemplo de descripción"},
-    { "id": '2', "resourceId": 'b', "start": '2020-09-08T09:00:00', "end": '2020-09-08T10:00:00', "title": 'event 3', "editable":False },
-    { "id": '3', "resourceId": 'c', "start": '2020-09-07T07:30:00', "end": '2020-09-07T09:30:00', "title": 'event 4', "editable":False },
-    { "id": '4', "resourceId": 'd', "start": '2020-09-07T10:00:00', "end": '2020-09-07T15:00:00', "title": 'event 5', "editable":False }
-])
+EVENT_TALKS = json.dumps(
+    [
+       {
+          "id":"1",
+          "resourceId":"a",
+          "start":"2020-09-07T09:00:00",
+          "end":"2020-09-07T14:00:00",
+          "title":"event 2",
+          "editable":False,
+          "description":"Ejemplo de descripción",
+          "url":"https://stackoverflow.com/"
+       },
+       {
+          "id":"2",
+          "resourceId":"b",
+          "start":"2020-09-08T09:00:00",
+          "end":"2020-09-08T10:00:00",
+          "title":"event 3",
+          "editable":False
+       },
+       {
+          "id":"3",
+          "resourceId":"c",
+          "start":"2020-09-07T07:30:00",
+          "end":"2020-09-07T09:30:00",
+          "title":"event 4",
+          "editable":False
+       },
+       {
+          "id":"4",
+          "resourceId":"d",
+          "start":"2020-09-07T10:00:00",
+          "end":"2020-09-07T15:00:00",
+          "title":"event 5",
+          "editable":False
+       }
+    ]
+)

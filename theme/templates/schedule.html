@@ -5,12 +5,10 @@
 {% endblock extra_css %}
 
 {% block extra_script %}
-
     <script src="{{ main_siteurl }}/theme/libs/fullcalendar/main.js"></script>
     <script src="{{ main_siteurl }}/theme/libs/moment/moment.min.js"></script>
     <script src="{{ main_siteurl }}/theme/libs/tooltip/popper.min.js"></script>
     <script src="{{ main_siteurl }}/theme/libs/tooltip/tooltip.min.js"></script>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
@@ -23,6 +21,9 @@
                 allDaySlot: false,
                 dayMinWidth: 50,
                 height: 620,
+                eventClick: function(info) {
+                    window.open(info.event.url, '_blank').focus();
+                },
                 eventDidMount: function(info) {
                     var tooltip = new Tooltip(info.el, {
                         title: info.event.extendedProps.description,
@@ -51,7 +52,6 @@
             calendar.render();
         });
 </script>
-
 {% endblock extra_script %}
 
 
