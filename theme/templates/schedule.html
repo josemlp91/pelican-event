@@ -23,6 +23,7 @@
                 allDaySlot: false,
                 dayMinWidth: 50,
                 height: 1250,
+                locale: 'es',
                 eventDidMount: function(info) {
                     var tooltip = new Tooltip(info.el, {
                         title: info.event.extendedProps.description,
@@ -43,7 +44,7 @@
                         buttonText: '2 days',
                     }
                 },
-                initialDate: "2020-09-07",
+                initialDate: "{{ EVENT_START_DATE }}",
                 resources: {{ EVENT_TRACKS|safe }},
                 events: {{ EVENT_TALKS|safe }}
             });
