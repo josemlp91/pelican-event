@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+# -*- coding: utf-8 -*-
 
 import sys
 import os
@@ -14,6 +14,3 @@ from pelicanconf_flags import *
 from pelicanconf_links import *
 
 SITEURL = ''
-
-
-

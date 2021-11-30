@@ -28,7 +28,7 @@ Divido los directorios en tres **categorías**.
 3. **Content**, contiene artículos y publicaciones en markdown.
 4. **Code**, contiene scripts en python para hacer pequeñas magias con Pelican y Python.
 
-Y tendríamos los siguientes directorios: 
+Y tendríamos los siguientes directorios:
 
 - **.github** (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)
 - **compose** (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.
@@ -47,7 +47,7 @@ docker-compose up --build
 ```
 
 
-En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local, ``make``. 
+En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local, ``make``.
 
 
 ```sh

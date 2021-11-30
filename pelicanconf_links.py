@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+# -*- coding: utf-8 -*-
 
 TICKETS_LINK=""
 CALL_FOR_PAPERS_LINK = ""

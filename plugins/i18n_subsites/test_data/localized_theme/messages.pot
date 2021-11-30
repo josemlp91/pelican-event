@@ -20,4 +20,3 @@ msgstr ""
 #: templates/base.html:3
 msgid "Welcome to our"
 msgstr ""
-

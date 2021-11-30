@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+# -*- coding: utf-8 -*-
 
 import sys
 import os
@@ -64,4 +64,3 @@ if ENABLED_BLOG:
 NAVBAR_STYLE = "is-primary"
 THEME_LOGO = "/theme/images/logo_grande.svg"
 FOOTER= "Copyright © Python España & PyConES 2022 Org"
-

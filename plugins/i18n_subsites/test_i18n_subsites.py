@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''Unit tests for the i18n_subsites plugin'''
 
 import os
@@ -42,12 +43,12 @@ class TestSettingsManipulation(unittest.TestCase):
         self.settings['PELICAN_CLASS'] = object
         cls = i18ns.get_pelican_cls(self.settings)
         self.assertIs(cls, object)
-        
+
     def test_get_pelican_cls_str(self):
         '''Test that we get correct class given by string'''
         cls = i18ns.get_pelican_cls(self.settings)
         self.assertIs(cls, Pelican)
-        
+
 
 class TestSitesRelpath(unittest.TestCase):
     '''Test relative path between sites generation'''
@@ -72,7 +73,7 @@ class TestSitesRelpath(unittest.TestCase):
         self.assertEqual(i18ns.relpath_to_site('en', 'de'), 'de')
         self.assertEqual(i18ns.relpath_to_site('de', 'en'), '..')
 
-        
+
 class TestRegistration(unittest.TestCase):
     '''Test plugin registration'''
 
@@ -91,7 +92,7 @@ class TestRegistration(unittest.TestCase):
             self.assertIn(id(handler), sig.receivers)
             # clean up
             sig.disconnect(handler)
-        
+
 
 class TestFullRun(unittest.TestCase):
     '''Test running Pelican with the Plugin'''

@@ -23,4 +23,3 @@ COPY compose/develop_server.sh /
 RUN chmod +x /develop_server.sh
 
 CMD /develop_server.sh start $PORT
-

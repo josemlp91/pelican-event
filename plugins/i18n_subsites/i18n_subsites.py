@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """i18n_subsites plugin creates i18n-ized subsites of the default site
 
 This plugin is designed for Pelican 3.4 and later
