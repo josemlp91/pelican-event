@@ -14,48 +14,104 @@ Tambien puedes formar parte de nuestros patrocinadores y tener tu espacio dentro
 """
 
 EVENT_TRACKS = json.dumps([
-     { "id": 'a', "title": 'Room A' },
-     { "id": 'b', "title": 'Room B', "eventColor": 'green' },
-     { "id": 'c', "title": 'Room C', "eventColor": 'orange' },
-     { "id": 'd', "title": 'Room D', "eventColor": 'red' }
+     { "id": 'core', "title": 'Track Core' },
+     { "id": 'data', "title": 'Track Data', "eventColor": 'green' },
+     { "id": 'web', "title": 'Track Web', "eventColor": 'orange' },
 ])
 
-EVENT_START_DATE = "2020-09-07"
+EVENT_START_DATE = "2022-09-30"
 EVENT_TALKS = json.dumps(
     [
-       {
-          "id":"1",
-          "resourceId":"a",
-          "start":"2020-09-07T09:00:00",
-          "end":"2020-09-07T14:00:00",
-          "title":"event 2",
-          "editable":False,
-          "description":"Ejemplo de descripción",
-          "url":"https://stackoverflow.com/"
-       },
-       {
-          "id":"2",
-          "resourceId":"b",
-          "start":"2020-09-08T09:00:00",
-          "end":"2020-09-08T10:00:00",
-          "title":"event 3",
-          "editable":False
-       },
-       {
-          "id":"3",
-          "resourceId":"c",
-          "start":"2020-09-07T07:30:00",
-          "end":"2020-09-07T09:30:00",
-          "title":"event 4",
-          "editable":False
-       },
-       {
-          "id":"4",
-          "resourceId":"d",
-          "start":"2020-09-07T10:00:00",
-          "end":"2020-09-07T15:00:00",
-          "title":"event 5",
-          "editable":False
-       }
+        {
+            "id":"1",
+            "resourceId":"core",
+            "start":"2022-09-30T15:00:00",
+            "end":"2022-09-30T17:30:00",
+            "title":"Introducción a Data Science en Python",
+            "editable":False,
+            "description":"Francisco Correoso, Guillem Duran, Juan Carlos González, Jordi Contestí, Antònia Tugores",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"2",
+            "resourceId":"web",
+            "start":"2022-09-30T15:00:00",
+            "end":"2022-09-30T17:30:00",
+            "title":"TDD de cero a cien (o casi)",
+            "editable":False,
+            "description":"TDD de cero a cien (o casi)",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"3",
+            "resourceId":"data",
+            "start":"2022-09-30T15:00:00",
+            "end":"2022-09-30T17:30:00",
+            "title":"Representación de datos geográficos",
+            "editable":False,
+            "description":"Representación de datos geográficos",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"4",
+            "resourceId": "data",
+            "start":"2022-09-30T17:30:00",
+            "end":"2022-09-30T18:00:00",
+            "title":"Café",
+            "editable":False,
+            "description":"Café",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"5",
+            "resourceId": "web",
+            "start":"2022-09-30T17:30:00",
+            "end":"2022-09-30T18:00:00",
+            "title":"Café",
+            "editable":False,
+            "description":"Café",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"6",
+            "resourceId": "core",
+            "start":"2022-09-30T17:30:00",
+            "end":"2022-09-30T18:00:00",
+            "title":"Café",
+            "editable":False,
+            "description":"Café",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"7",
+            "resourceId": "data",
+            "start":"2022-09-30T18:00:00",
+            "end":"2022-09-30T20:30:00",
+            "title":"¡Eureka! - Python y ciencia",
+            "editable":False,
+            "description":"¡Eureka! - Python y ciencia",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"8",
+            "resourceId": "web",
+            "start":"2022-09-30T18:00:00",
+            "end":"2022-09-30T20:30:00",
+            "title":"Las herramientas de un detective",
+            "editable":False,
+            "description":"Las herramientas de un detective",
+            "url":"https://stackoverflow.com/"
+        },
+        {
+            "id":"9",
+            "resourceId": "core",
+            "start":"2022-09-30T18:00:00",
+            "end":"2022-09-30T20:30:00",
+            "title":"Pyomo – Optimización en Python",
+            "editable":False,
+            "description":"Pyomo – Optimización en Python",
+            "url":"https://stackoverflow.com/"
+        },
+
     ]
 )
