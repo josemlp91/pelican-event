@@ -10,7 +10,6 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 from pelicanconf_common import *
 from pelicanconf_event import *
 from pelicanconf_flags import *
-from pelicanconf_links import *
 
 
 SITEURL = 'https://josemlp91.github.io/pelican-event/'

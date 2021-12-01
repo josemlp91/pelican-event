@@ -13,6 +13,10 @@ Con tu entrada podrás acceder los dos días de la conferencia completos.<br>
 Tambien puedes formar parte de nuestros patrocinadores y tener tu espacio dentro del evento.
 """
 
+TICKETS_LINK=""
+CALL_FOR_PAPERS_LINK = ""
+MAP_IFRAME_LINK = "https://maps.google.com/maps?q=granada&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
 EVENT_TRACKS = json.dumps([
      { "id": 'core', "title": 'Track Core' },
      { "id": 'data', "title": 'Track Data', "eventColor": 'green' },

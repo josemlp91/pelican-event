@@ -64,5 +64,5 @@ if ENABLED_BLOG:
     MENUITEMS_NAVBAR.append(tuple(("Blog", "/blog.html")))
 
 NAVBAR_STYLE = "is-primary"
-THEME_LOGO = "/theme/images/logo_grande.svg"
+THEME_LOGO = "/theme/images/piconesGR_mini.svg"
 FOOTER= "Copyright © Python España & PyConES 2022 Org"
