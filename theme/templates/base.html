@@ -41,22 +41,16 @@
 
 	</head>
 	<body>
-
 		{% block navbar %}
 			{% include "_includes/navbar.html" %}
 		{% endblock navbar %}
 
-		<section class="section">
-			<div class="container">
-				{% block content %}
-				<!-- Content -->
-				{% endblock content %}
-			</div>
-		</section>
+		{% block content %}
+		<!-- Content -->
+		{% endblock content %}
 
 		{% block footer %}
 			{% include "_includes/footer.html" %}
 		{% endblock footer %}
-
 	</body>
 </html>
