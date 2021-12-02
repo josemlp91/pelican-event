@@ -32,6 +32,7 @@
     li span {
         display: block;
         font-size: 4.5rem;
+        font-family:  'Arvo', serif;
     }
 
 
@@ -65,15 +66,15 @@
             yyyy = today.getFullYear(),
             nextYear = yyyy + 1,
             dayMonth = "10/01/",
-            pycones_date = dayMonth + yyyy;
+            pyconesDate = dayMonth + yyyy;
 
         today = mm + "/" + dd + "/" + yyyy;
-        if (today > pycones_date) {
-            pycones_date = dayMonth + nextYear;
+        if (today > pyconesDate) {
+            pyconesDate = dayMonth + nextYear;
         }
         //end
 
-        const countDown = new Date(pycones_date).getTime(),
+        const countDown = new Date(pyconesDate).getTime(),
             x = setInterval(function() {
 
                 const now = new Date().getTime(),
@@ -118,7 +119,7 @@
                 <div class="box">
                     <div class="field is-grouped">
                         <p class="control is-expanded">
-                            <input class="input" type="text" placeholder="Introduce su email para notificaciones">
+                            <input class="input" type="text" placeholder="Introduce su email">
                         </p>
                         <p class="control">
                             <a class="button is-info">
