@@ -81,7 +81,7 @@ EVENT_TALKS = json.dumps(
             "resourceId": "core",
             "start":"2022-09-30T17:30:00",
             "end":"2022-09-30T18:00:00",
-            "title":"Café",
+            "title":"Charla con un título bastante largo",
             "editable":False,
             "description":"Café",
             "url":"https://stackoverflow.com/"

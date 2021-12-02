@@ -5,12 +5,16 @@
 {% endblock title %}
 
 {% block content %}
-<article class="message is-info">
-    <div class="message-header">
-        {{ page.title }}
+<section class="section">
+    <div class="container">
+        <article class="message is-info">
+            <div class="message-header">
+                {{ page.title }}
+            </div>
+            <div class="message-body has-text-dark">
+                {{ page.content }}
+            </div>
+        </article>
     </div>
-    <div class="message-body has-text-dark">
-        {{ page.content }}
-    </div>
-</article>
-{% endblock content %}
+</section>
+    {% endblock content %}

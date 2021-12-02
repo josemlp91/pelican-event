@@ -5,9 +5,12 @@
 {% endblock title %}
 
 {% block content %}
-<h1 class="title">{% trans %}Artículos categorizados en: {% endtrans %} <span class="tag is-large">{{ category }}</span></h1>
-
-{% for article in dates %}
-    {% include "_includes/blog/article_extract.html" %}
-{% endfor %}
+<section class="section">
+    <div class="container">
+        <h1 class="title">{% trans %}Artículos categorizados en: {% endtrans %} <span class="tag is-large">{{ category }}</span></h1>
+        {% for article in dates %}
+            {% include "_includes/blog/article_extract.html" %}
+        {% endfor %}
+    </div>
+</section>
 {% endblock content %}

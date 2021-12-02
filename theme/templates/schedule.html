@@ -57,8 +57,12 @@
 
 
 {% block content %}
-    <div id='calendar'></div>
-    <div class="box has-text-centered">
-        <a class="button is-medium button is-link" href="{{SITEURL}}/{{EVENTS_ICS_FNAME}}">Descargar ICalendar</a>
+<section class="section">
+    <div class="container">
+        <div id='calendar'></div>
+        <div class="box has-text-centered">
+            <a class="button is-medium button is-link" href="{{SITEURL}}/{{EVENTS_ICS_FNAME}}">Descargar ICalendar</a>
+        </div>
     </div>
+</section>
 {% endblock content %}
