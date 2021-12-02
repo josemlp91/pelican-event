@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block navbar %}
-	{% if not ENABLED_LANDING %}
+	{% if not LANDING_MODE %}
 		{% include "_includes/index/navbar.html" %}
 	{% endif %}
 {% endblock navbar %}
 
 {% block content %}
 
-	{% if ENABLED_LANDING %}
+	{% if LANDING_MODE %}
 		{% include "_includes/index/landing.html" %}
 	{% else %}
 		<section class="section">
@@ -44,7 +44,7 @@
 
 
 {% block footer %}
-	{% if not ENABLED_LANDING %}
+	{% if not LANDING_MODE %}
 		{% include "_includes/footer.html" %}
 	{% endif %}
 {% endblock footer %}

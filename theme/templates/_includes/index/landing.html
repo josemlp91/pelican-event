@@ -1,3 +1,101 @@
+<style>
+    .landing {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+        ), url("{{ SITEURL }}/theme/images/granada.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .container {
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: normal;
+        letter-spacing: .125rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+
+    li span {
+        display: block;
+        font-size: 4.5rem;
+    }
+
+
+    @media all and (max-width: 768px) {
+        h1 {
+            font-size: calc(1.5rem * var(--smaller));
+        }
+
+        li {
+            font-size: calc(1.125rem * var(--smaller));
+        }
+
+        li span {
+            font-size: calc(3.375rem * var(--smaller));
+        }
+    }
+</style>
+
+<script>
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+        //I'm adding this section so I don't have to keep updating this pen every year :-)
+        //remove this if you don't need it
+        let today = new Date(),
+            dd = String(today.getDate()).padStart(2, "0"),
+            mm = String(today.getMonth() + 1).padStart(2, "0"),
+            yyyy = today.getFullYear(),
+            nextYear = yyyy + 1,
+            dayMonth = "10/01/",
+            pycones_date = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > pycones_date) {
+            pycones_date = dayMonth + nextYear;
+        }
+        //end
+
+        const countDown = new Date(pycones_date).getTime(),
+            x = setInterval(function() {
+
+                const now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                    document.getElementById("headline").innerText = "Es la fecha de PyconES GRX!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                }
+                //seconds
+            }, 0)
+    }());
+
+</script>
 <section class="hero is-info is-fullheight landing">
     <div class="hero-body">
         <div class="container has-text-centered">
@@ -5,16 +103,26 @@
                 <figure class="image">
                     <img class="is-rounded" src="{{ SITEURL }}/theme/images/piconesGR_horizontal.svg">
                 </figure>
-                <h1 class="title">Proximamente</h1>
+                <h1 class="title">El 01 de Octubre de 2022</h1>
+                <div class="container">
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span>días</li>
+                            <li><span id="hours"></span>horas</li>
+                            <li><span id="minutes"></span>minutos</li>
+                            <li><span id="seconds"></span>segundos</li>
+                        </ul>
+                    </div>
+                </div>
                 <h2 class="subtitle">El mayor evento dedicado a Python de España, llega a Granada</h2>
                 <div class="box">
                     <div class="field is-grouped">
                         <p class="control is-expanded">
-                            <input class="input" type="text" placeholder="Introduce su email">
+                            <input class="input" type="text" placeholder="Introduce su email para notificaciones">
                         </p>
                         <p class="control">
                             <a class="button is-info">
-                                Enviar más información
+                                Enviar
                             </a>
                         </p>
                     </div>
