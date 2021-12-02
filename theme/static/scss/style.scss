@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$primary: #D97759;
+$primary: #0E749C;
 $info: #0E749C;
 $link: #0E749C;
 $success: #3DADE0;
@@ -11,6 +11,7 @@ $danger: #E03D52;
 
 @import "../libs/bulma/bulma.sass";
 @import "../libs/bulma/bulma-timeline.sass";
+
 
 h1, h2, h3, h4, h5 {
   font-family:  'Arvo', serif;
