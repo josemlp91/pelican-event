@@ -3,7 +3,7 @@
 
 # General flags.
 
-LANDING_MODE = True
+LANDING_MODE = False
 
 ENABLED_TICKETS = True
 ENABLED_CALL_FOR_PAPERS = True
