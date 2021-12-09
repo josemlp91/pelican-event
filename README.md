@@ -4,8 +4,7 @@
 ### Creador de contenidos o editor
 
 Aquí no necesitas tener grandes conocimientos técnicos, solo necesitamos creatividad.
-Todos los contenidos se escriben usando [Markdown](https://markdown.es/) y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación. También, si quieres enseñar gráficos o partes de código en tus artículos puedes hacerlo a través de [jupyter notebook](https://jupyter.org/), encontrarás la info detallada de como hacerlo [aquí](https://github.com/danielfrg/pelican-jupyter).
-
+Todos los contenidos se escriben usando [Markdown](https://markdown.es/) y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación.
 
 ### Web developer
 
@@ -40,18 +39,62 @@ Y tendríamos los siguientes directorios:
 
 ### Localhost
 
-Para arrancar este proyecto en local, independientemente del sistema operativo que uses, necesitas instalar [Docker](https://www.docker.com/get-started) y [docker-compose](https://docs.docker.com/compose/install/).
+Para arrancar este proyecto en local, independientemente del sistema operativo que uses, tienes dos alternativas
+
+
+#### Docker
+
+Para ello necesitas [Docker](https://www.docker.com/get-started) y [docker-compose](https://docs.docker.com/compose/install/).
 
 ```sh
 docker-compose up --build
 ```
 
+Accede con tu navegador a la url [localhost:8080](http://localhost:8080)
 
-En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local, ``make``.
+#### Python & Virtualenv
 
+Debes tener instalado Python >= 3.6 y [virtualenv](https://virtualenv.pypa.io/en/latest/) y seguir los siguientes pasos:
 
-```sh
-make up
+1. Crear un virtualenv propio para este proyecto y activarlo
+
+```bash
+virtualenv venv
+source ./venv/bin/activate
 ```
 
-Accede con tu navegador a la url [localhost:8000](http://localhost:8080)
+2. Instalar las dependencias Python necesarias
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Iniciar el servidor web en local con el script o con make indicando de forma opcional el puerto deseado (por defecto 8000)
+
+- Opción 1
+```bash
+./develop_server.sh start {PORT}
+```
+
+- Opción 2
+```bash
+ make devserver PORT={PORT}
+```
+
+## Flag del evento
+
+Como sabemos cualquier evento o congreso pasa por diferentes etapas, donde la información a mostrar en la web debe ser diferente.
+Para facilitar el trabajo contamos con el archivo **pelicanconf_flags.py** donde el organizador puede habilitar y deshabilitar elementos de la web.
+
+
+| Variable                  | Descripción                                                  |
+| ------------------------- | ------------------------------------------------------------ |
+| LANDING_MODE              | Habilita el modo landing-page de la web, para poder tener una presentación reducida o completa de la web. |
+| ENABLED_TICKETS           | Habilita links a la tienda de las entradas del evento.       |
+| ENABLED_CALL_FOR_PAPERS   | Habilita bloque que hace la llamada a los ponentes.          |
+| ENABLED_KEYNOTERS         | Hablita bloque que muestra los oradores plenarios del evento. |
+| ENABLED_SPEAKERS          | Habilita pantalla de ponentes.                               |
+| ENABLED_SPONSORSHIPS      | Habilita bloque con todos los patrocinadores.                |
+| ENABLED_CALL_FOR_SPONSORS | Habilita bloque con llamamiento a patrocinadores             |
+| ENABLED_SCHEDULE          | Habilita la vista del calendario del evento.                 |
+| ENABLED_BLOG              | Habilita la funcionalidad de blog de contenidos de la web.   |

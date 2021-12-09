@@ -13,38 +13,19 @@ AUTHOR = 'Python España Org'
 SITENAME = 'PyConES 2022 GRX'
 PATH = 'content'
 THEME = "theme"
+PLUGIN_PATHS = ["plugins"]
+
 TIMEZONE = 'Europe/Madrid'
 DEFAULT_LANG = 'es'
+MARKUP = ("md",)
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-MARKUP = ("md", "ipynb")
-IGNORE_FILES = [".ipynb_checkpoints"]
-
-PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["i18n_subsites", "assets", "events"]
-
-IPYNB_FIX_CSS = True
-IPYNB_SKIP_CSS = False
-IPYNB_STOP_SUMMARY_TAGS = [('div', ('class', 'input')), ('div', ('class', 'output')), ('h2', ('id', 'Header-2'))]
-IPYNB_GENERATE_SUMMARY = True
-
-EVENTS_ICS_FNAME =  'calendar.ics'
-
-
-DIRECT_TEMPLATES = ['index', 'blog', 'keynoters', 'sponsorship', 'schedule']
 JINJA_ENVIRONMENT = {
     "extensions": ["jinja2.ext.i18n"],
 }
 
-DEFAULT_PAGINATION = False
-
-# Theme config
+EVENTS_ICS_FNAME =  'calendar.ics'
+DIRECT_TEMPLATES = ['index', 'blog', 'keynoters', 'sponsorship', 'schedule']
 MENUITEMS_NAVBAR = [
     ("La ciudad", "/pages/granada.html"),
     ("Código de conducta", "/pages/code-of-conduct.html"),
